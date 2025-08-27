@@ -22,7 +22,12 @@ def main(args) -> None:
         config = yaml.safe_load(f)
 
     df = load_input(Path(args.input))
-    mapping = preprocess_dataframe(df, domain_terms=config.get("labeling", {}).get("keywords", []))
+    ignore_words = config.get("preprocessing", {}).get("ignore_words", [])
+    mapping = preprocess_dataframe(
+        df,
+        domain_terms=config.get("labeling", {}).get("keywords", []),
+        ignore_words=ignore_words
+    )
 
     texts_norm = list(mapping.keys())
     occurrences = [v[0] for v in mapping.values()]
@@ -41,7 +46,7 @@ def main(args) -> None:
 
     label_conf = config.get("labeling", {})
     cluster_name_map = label_clusters(
-        original_texts,
+        texts_norm,
         list(cluster_ids),
         keywords=label_conf.get("keywords", []),
         yake_topk=label_conf.get("yake_topk", 10),
@@ -50,7 +55,7 @@ def main(args) -> None:
 
     out_conf = config.get("output", {})
     kpis, top_clusters = aggregate_report(
-        original_texts,
+        texts_norm,
         occurrences,
         list(cluster_ids),
         cluster_name_map,

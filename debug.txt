@@ -1,0 +1,16 @@
+ORIGINAL: APEX: [Schichtplan] evtl. [174:1:xxx] | [Automatische Anmeldung mit PKI geht nicht]
+NORMALIZED: schichtplan evtl 174 1 xxx automatische anmeldung pki geht nicht
+ORIGINAL: APEX: [Mehrere Anwendungen] evtl. [161:1:10028677389729 und 341:1:yyy] | [Statt login mit PKI kommt Anmeldemaske]
+NORMALIZED: mehrere anwendungen evtl 161 1 10028677389729 341 1 yyy statt login pki kommt anmeldemaske
+ORIGINAL: CPT: [technisches Problem/ Die Seit ist nicht erreichbar]
+NORMALIZED: technisches problem seit nicht erreichbar
+ORIGINAL: Kunde NW IN LAN OFFICE NAC Authentisierungsfehler Netzzugangskontrolle (NAC - Network Access Control)
+NORMALIZED: nw lan office nac authentisierungsfehler netzzugangskontrolle nac network access control
+ORIGINAL: TBD: Technischer Fehler / Bug
+NORMALIZED: technischer fehler bug
+ORIGINAL: APEX: [Kennzahlen-Dashboard  OT ] - | [keine Einwahl möglich]
+NORMALIZED: kennzahlen dashboard ot keine einwahl möglich
+ORIGINAL: Kunde SAP GUI: SNC Fehler / Anmeldeproblem mit PKI
+NORMALIZED: sap gui snc fehler anmeldeproblem pki
+ORIGINAL: Nero: Zugriff nicht möglich
+NORMALIZED: zugriff nicht möglich

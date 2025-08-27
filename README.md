@@ -111,3 +111,15 @@ labeling:
 output:
   top_n_clusters: 10
   include_noise: false
+
+## Ausführung
+
+Lege die Eingabedatei als `input.xlsx` im Projektverzeichnis ab und starte
+den Prozess anschließend mit:
+
+```bash
+python main.py
+```
+
+Über die Argumente `--input`, `--config` und `--output` können bei Bedarf
+eigene Pfade angegeben werden.

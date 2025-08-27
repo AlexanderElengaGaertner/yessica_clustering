@@ -63,7 +63,15 @@ def main(args) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Ticket clustering pipeline")
-    parser.add_argument("input", help="Input CSV or Excel file")
-    parser.add_argument("--config", default="config.yaml")
-    parser.add_argument("--output", default="overview.xlsx")
+    parser.add_argument(
+        "--input",
+        default="input.xlsx",
+        help="Input CSV or Excel file (default: input.xlsx)",
+    )
+    parser.add_argument(
+        "--config", default="config.yaml", help="Configuration YAML file"
+    )
+    parser.add_argument(
+        "--output", default="overview.xlsx", help="Output Excel report"
+    )
     main(parser.parse_args())
